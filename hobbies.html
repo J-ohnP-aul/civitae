@@ -1,45 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hobbies</title>
+  <title>Hobbies — John Paul Okoth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .page { max-width: 700px; margin: 0 auto; padding: 5rem 2rem 4rem; }
+    .back { display: inline-block; font-size: .85rem; color: var(--muted); margin-bottom: 2rem; }
+    .back:hover { color: var(--text); text-decoration: none; }
+    .hobby-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 2rem; }
+    .hobby { border-left: 3px solid var(--accent-light); padding-left: 1.25rem; }
+    .hobby strong { display: block; font-size: 1rem; font-weight: 600; margin-bottom: .3rem; }
+    .hobby p { font-size: .92rem; color: var(--muted); }
+  </style>
 </head>
 <body>
-  <h1>Hobbies</h1>
-  <ol type="i">
-    <li>
-      <p> <h3>Tech_staffs</h3>focused about low level languages, Object Oriented Programming, clear algorthmic
-          structure in code. Applying lecture concept on ground work
-      </p>
-      <hr>
-    </li>
-    <li>
-      <p><h3>GreyHat</h3>:Enthusistic grayHat, familiar with kali linux Env and hands on intrest in metasploit
-          and burpsuite, all for web exploitation.
-      </p>
-      <hr>
-    </li>
-    <li>
-      <p><h3>Literature and philosophy</h3>: Passionate on poetry, existensialism, gnoist texts. favourite
-      works AlbertCamu: strangers, The_secret and vairus exploring the common truth </p>
-      <hr>
-    </li>
-    <li>
-      <p><h3>Rugby</h3>: An Active Rugby player, position Hooker/center, team Kisii 
-      wining as a Team makes best memories.
-      </p>
-        <hr>
-      </li>
-    <li>
-      <p>
-        <h3>coding</h3>
-        :Constantly refactoring and incrementing my 
-        existing codebase while architecting new projects to have a constant graph rising.
-      </p> <hr>
-    </li>
-  </ol>
-
+  <nav>
+    <span class="nav-name">John Paul Okoth</span>
+    <div class="nav-links">
+      <a href="index.html">← Back</a>
+      <a href="CV.pdf" download class="nav-cv">CV ↓</a>
+    </div>
+  </nav>
+  <div class="page">
+    <a href="index.html" class="back">← Back to portfolio</a>
+    <h2 style="font-family:'DM Serif Display',serif;font-weight:400;font-size:2rem;letter-spacing:-.01em;">Interests & Hobbies</h2>
+    <div class="hobby-list">
+      <div class="hobby">
+        <strong>Systems & Low-Level Programming</strong>
+        <p>Focused on low-level languages, OOP, and clean algorithmic structure. Applying lecture concepts to real groundwork — understanding how machines actually work underneath.</p>
+      </div>
+      <div class="hobby">
+        <strong>Grey Hat Security</strong>
+        <p>Enthusiastic grey hat, at home in Kali Linux with hands-on interest in Metasploit and Burp Suite for web exploitation and penetration testing.</p>
+      </div>
+      <div class="hobby">
+        <strong>Literature & Philosophy</strong>
+        <p>Passionate about poetry, existentialism, and gnostic texts. Favourite works include Camus' The Stranger — writing that explores common human truths.</p>
+      </div>
+      <div class="hobby">
+        <strong>Rugby</strong>
+        <p>Active player — Hooker / Centre — for the Kisii team. Winning as a unit creates the best memories and keeps teamwork instincts sharp.</p>
+      </div>
+      <div class="hobby">
+        <strong>Continuous Building</strong>
+        <p>Always refactoring and incrementing my existing codebase while architecting new projects. A constant, upward graph.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
