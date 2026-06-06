@@ -9,6 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "gR_dM0nyeyipZ_Y7L",
+            });
+        })();
+    </script>
 </head>
 <body>
 
@@ -19,7 +29,7 @@
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-      <a href="CV.pdf" download class="nav-cv">CV ↓</a>
+      <a href="CV.pdf" download class="nav-cv">Lorem ipsum</a>
     </div>
   </nav>
 
@@ -133,7 +143,7 @@
         <span class="proj-tag">Web</span>
         <h3>This Portfolio</h3>
         <p>Personal portfolio site. Built with HTML and CSS, deployed on Vercel.</p>
-        <a href="https://c-v-fawn.vercel.app" target="_blank">Live site →</a>
+        <a href="https://noble-nu.vercel.app/" target="_blank">Live site →</a>
       </div>
 
     </div>
@@ -175,7 +185,7 @@
         </div>
         <div class="contact-item">
           <span>Phone</span>
-          <a href="tel:+254746364507">+254 746 364 507</a>
+          <a href="tel:+254751298524">+254 751298524</a>
         </div>
         <div class="contact-item">
           <span>GitHub</span>
@@ -188,12 +198,13 @@
         <a href="CV.pdf" download class="btn" style="margin-top:1.5rem">Download CV ↓</a>
       </div>
 
-      <form class="contact-form" action="mailto:johnpaulokoth@gmail.com" method="GET">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="body" rows="5" placeholder="Your message..."></textarea>
-        <button type="submit" class="btn">Send message</button>
+      <form id="contactForm" class="contact-form">
+        <input id="name" type="text" name="name" placeholder="Your name" required>
+        <input id="email" type="email" name="email" placeholder="Your email" required>
+        <input id="subject" type="text" name="subject" placeholder="Subject">
+        <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+        <button type="button" class="btn" onclick="sendMail(); return false;">Send message</button>
+        <div id="form-status" class="form-status" aria-live="polite" style="margin-top:.75rem"></div>
       </form>
     </div>
   </section>
@@ -223,7 +234,7 @@
     </div>
 
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
 
